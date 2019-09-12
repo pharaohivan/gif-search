@@ -34,10 +34,11 @@ def index():
     # TODO: Using dictionary notation, get the 'results' field of the JSON,
     # which contains the GIFs as a list
     results = data["results"][0:10]
+    print(results)
     # TODO: Render the 'index.html' template, passing the list of gifs as a
     # named parameter called 'gifs'
 
-    return render_template("index.html")
+    return render_template("index.html", results=results)
 
 if __name__ == '__main__':
     app.run(debug=True)
