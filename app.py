@@ -33,7 +33,7 @@ def index():
 
     # TODO: Using dictionary notation, get the 'results' field of the JSON,
     # which contains the GIFs as a list
-
+    results = data["results"][0:10]
     # TODO: Render the 'index.html' template, passing the list of gifs as a
     # named parameter called 'gifs'
 
