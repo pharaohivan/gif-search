@@ -3,21 +3,26 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title></title>
+        <title>Gif Search</title>
     </head>
     <body>
 
-
-
-        <!-- TODO: Extend 'base.html' and put content into a block 'body' to match -->
-
+<!-- TODO: Extend 'base.html' and put content into a block 'body' to match -->
+        <form>
+            <input type="text" name="search" placeholder="Search">
+            <input type ="submit">
+        </form>
         <!-- TODO: Make an HTML form containing a search box and a submit button to add
             the search term to the query string. The form should have a target of '/' to
             send us to the same route. -->
 
         <!-- TODO: Make a for loop to loop over GIFs passed in from the server -->
+        <ul>
+            {% for gifs in results %}
+                <li> </li>
+                {% endfor %}
 
+        </ul>
         <!-- TODO: For each gif, include the 'gif.html' template to display it -->
 
 
