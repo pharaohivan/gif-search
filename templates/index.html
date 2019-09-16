@@ -1,9 +1,14 @@
 {% extends 'base.html' %}
+
+(% block title %)
+Gif Search
+(% end block %)
+
 {% block body %}
 
 <!-- TODO: Extend 'base.html' and put content into a block 'body' to match -->
         <form>
-            <input type="text" name="search" placeholder="Search">
+            <input type="text" name="q" placeholder="Search">
             <input type ="submit">
         </form action ='/pull'>
         <!-- TODO: Make an HTML form containing a search box and a submit button to add
@@ -20,6 +25,6 @@
         </ul>
         {% else %}
             no gif
-        {% end if %}
-        {% endblock %}
+        {% endif %}
+    {% endblock %}
         <!-- TODO: For each gif, include the 'gif.html' template to display it -->
