@@ -2,7 +2,7 @@
 
 (% block title %)
 Gif Search
-(% end block %)
+(% endblock %)
 
 {% block body %}
 
@@ -11,18 +11,17 @@ Gif Search
             <input type="text" name="q" placeholder="Search..">
             <button type ="submit"> Submit </button>
         </form>
+
         <!-- TODO: Make an HTML form containing a search box and a submit button to add
             the search term to the query string. The form should have a target of '/' to
             send us to the same route. -->
 
         <!-- TODO: Make a for loop to loop over GIFs passed in from the server -->
-        {% if results %}
-            {% for gif in results %}
-                {% include 'gif.html' %}
-            {% endfor %}
+        <ul>
+        {% for gif in results %}
+          {% include 'gif.html' %}
+        {% endfor %}
+        </ul>
 
-        {% else %}
-            no gif
-        {% endif %}
-    {% endblock %}
+{% endblock %}
         <!-- TODO: For each gif, include the 'gif.html' template to display it -->
