@@ -16,7 +16,7 @@ def index():
     params = {
         'q': query_term,
         'key': "BAI80UHWOVOB",
-        'limit': '10'
+        'limit': '12'
     }
     # TODO: Make an API call to Tenor using the 'requests' library. For
     # reference on how to use Tenor, see:

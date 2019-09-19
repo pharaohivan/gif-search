@@ -1,10 +1,47 @@
 body {
-  background-color: grey;
+  background-image: url("gifsearch.jpg");
 }
 
 ul{
   display:grid;
-  grid-template-columns: repeat(3, 2fr);
-  grid-gap: 5px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template: 10px 5px;
+  grid-gap: 15px;
+  justify-content: center;
 
 }
+
+.Search{
+  text-align: center;
+
+}
+
+ /* input[type=text] {
+  width: 130px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+} */
+
+/* When the input field gets focus, change its width to 100% */
+/* input[type=text]:focus {
+  width: 100%;
+} */
+
+script{
+  border: 0px;
+}
+
+h1{
+  font-size: 30px;
+  text-align: center;
+  color: white;
+}
+.tenor-gif-embed{
+  max-width:90%;
+  max-height: 90%;
+  object-fit: fill;
+}
+
+/* .tenor-gif-embed body {
+  background-color: none !important;
+} */
