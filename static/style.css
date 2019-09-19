@@ -13,19 +13,24 @@ ul{
 
 .Search{
   text-align: center;
+  border-color: purple;
 
 }
 
- /* input[type=text] {
-  width: 130px;
-  -webkit-transition: width 0.4s ease-in-out;
-  transition: width 0.4s ease-in-out;
-} */
+input[type=text] {
+ width: 80px;
+ -webkit-transition: width 0.4s ease-in-out;
+ transition: width 0.4s ease-in-out;
+}
 
 /* When the input field gets focus, change its width to 100% */
-/* input[type=text]:focus {
-  width: 100%;
-} */
+input[type=text]:focus {
+ width: 80%;
+}
+
+.button{
+  color:purple;
+}
 
 script{
   border: 0px;
